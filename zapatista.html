@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Zapatista Esperanza - تاريخ وأحداث</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Changa:wght@600;800&display=swap" rel="stylesheet">
+
+<style>
+/* ===== عام ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd000;
+}
+
+/* ===== الهيدر ===== */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.header-top img {
+    height: 50px;
+    transition: transform 0.4s;
+}
+
+.header-top img:hover {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.back-btn {
+    padding: 10px 20px;
+    border: 2px solid #ffd000;
+    border-radius: 8px;
+    font-family: 'Changa', sans-serif;
+    font-weight: 700;
+    color: #ffd000;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.back-btn:hover {
+    background: #ffd000;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* ===== الهيرو ===== */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+      linear-gradient(120deg, rgba(200,0,0,0.4), rgba(255,200,0,0.15)),
+      url('https://i.imgur.com/3G6z1QF.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-family: 'Changa', sans-serif;
+    font-size: 4rem;
+    color: #ffd000;
+    text-shadow: 0 0 40px #ffd000, 0 0 70px #c00000;
+    animation: glow 2s infinite alternate;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #eee;
+}
+
+/* ===== الأقسام ===== */
+.section {
+    padding: 100px 10% 80px;
+}
+
+.section h2 {
+    font-family: 'Changa', sans-serif;
+    font-size: 2.8rem;
+    color: #ffd000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 80px;
+    height: 4px;
+    background: #c00000;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* ===== معرض الصور ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255,200,0,0.5);
+}
+
+/* ===== الفوتر ===== */
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #000;
+    color: #777;
+}
+
+/* ===== الرسوم المتحركة ===== */
+@keyframes glow {
+    from {text-shadow: 0 0 20px #ffd000;}
+    to {text-shadow: 0 0 50px #ffd000, 0 0 80px #c00000;}
+}
+
+@keyframes pulse {
+    0% {box-shadow: 0 0 5px #ffd000;}
+    50% {box-shadow: 0 0 20px #ffd000;}
+    100% {box-shadow: 0 0 5px #ffd000;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== الهيدر ===== -->
+<div class="header-top">
+    <img src="zapaaa.svg" alt="Zapatista Logo">
+    <a class="back-btn" href="index.html">العودة للصفحة الرئيسية</a>
+</div>
+
+<!-- ===== الهيرو ===== -->
+<section class="hero" id="home">
+    <div>
+        <h1>ZAPATISTA ESPERANZA</h1>
+        <p>روح المدرجات… صوت الحرية… ووفاء لا يموت</p>
+    </div>
+</section>
+
+<!-- ===== قسم التعريف بالزاباتيستا ===== -->
+<section class="section" id="about-zapatista">
+    <h2>زاباتيستا الترجي</h2>
+    <p>
+        زاباتيستا ترجي يجمع بين حركة "جيش زاباتيستا للتحرر الوطني" (EZLN) المكسيكية، وهي حركة اشتراكية مناهضة للعولمة تسعى لحقوق السكان الأصليين، وبين جمهور الترجي الرياضي التونسي. بعض مجموعات الألتراس، مثل "الصعاليك" (Zapatista Esperanza)، تبنت اسم "الزاباتيستا" للتعبير عن روح المقاومة والتمرد والالتزام القوي بالفريق على غرار فلسفة الحركة المكسيكية، خاصة وأن تأسيس الترجي عام 1919 يتزامن مع فترة نشاط إميليانو زاباتا، قائد الحركة المكسيكية الشهير.
+    </p>
+    <p>
+        <strong>الأصل (المكسيك):</strong> حركة زاباتيستا (EZLN) هي حركة ثورية تأسست في ولاية تشياباس المكسيكية في التسعينيات، مستلهمة من القائد المكسيكي إميليانو زاباتا، وتناضل من أجل العدالة الاجتماعية للسكان الأصليين.
+    </p>
+    <p>
+        <strong>التطبيق (تونس):</strong> جماعات الألتراس التابعة للترجي التونسي، وتحديداً "Zapatista Esperanza" (أمل الزاباتيستا)، تبنت هذا الاسم لتعكس روح التمرد والتحدي والسعي للدفاع عن حقوق جماهير الفريق، مثلما فعل الزاباتيستا في المكسيك.
+    </p>
+    <p>
+        <strong>الرمزية:</strong> يربط المشجعون بين تاريخ تأسيس الترجي (1919) وتاريخ وفاة زاباتا (1919)، معتبرين أن المقاومة مستمرة، وأنهم يمثلون صوت الشعب والمظلومين، كما يوحي اسم "زاباتيستا".
+    </p>
+</section>
+
+
+<section class="section" id="crackages">
+    <h2>الأحداث المميزة وCrackages</h2>
+    <p>
+        تُعد مجموعة "زاباتيستا إسبيرانزا" (Zapatista Esperanza) التابعة لنادي الترجي الرياضي التونسي رائدة في فن "التيفو" (Tifo) و**"الكراكاج" (Craquage)**، وتمتلك أرقاماً قياسية في هذا المجال. تُعرف المجموعة بإبداعها الكبير في تصميم وتنفيذ اللوحات الجماهيرية الضخمة التي تحمل رسائل فنية وسياسية واجتماعية عميقة. 
+الإبداع في "التيفو"
+"التيفو" هو العرض البصري الذي يقدمه المشجعون في المدرجات باستخدام قطع قماشية ملونة (كولورز)، أعلام، أو لافتات ضخمة (باشاج). تتميز "زاباتيستا" بما يلي:
+الرسائل العميقة: غالباً ما تتجاوز "تيفوات" الزاباتيستا مجرد دعم الفريق، بل تعكس التزامهم بالأيديولوجية المستوحاة من الحركة الزاباتيستا المكسيكية. تتضمن الرسائل مفاهيم الثورة، مناهضة الظلم، المطالبة بالحرية، والعدالة الاجتماعية.
+الشمولية والتعقيد: تشتهر المجموعة بتنفيذ "تيفوات" معقدة تشمل كامل المدرج الجنوبي (الكورفا سود) لملعب رادس، وتتطلب تنظيماً دقيقاً ومزامنة مثالية بين آلاف المشجعين.
+التقدير العالمي: تم اختيار إحدى "دخلات" (تيفو) مجموعة "زاباتيستا إسبيرانزا" كواحدة من أفضل 10 "تيفوات" في العالم لسنة 2023. 
+فن "الكراكاج" (Craquage)
+يشير مصطلح "كراكاج" إلى الاستخدام المكثف والمذهل للألعاب النارية، الشماريخ، والقنابل الدخانية لخلق جو بصري ناري وكثيف الدخان في المدرجات. وتتميز "زاباتيستا" في هذا المجال:
+الكثافة: تشتهر المجموعة بقدرتها على إشعال عدد هائل من الشماريخ في وقت واحد، مما يخلق سحباً ضخمة من الدخان الأحمر والأصفر (ألوان النادي) تغطي سماء الملعب.
+التوقيت والاحتفالية: يتم تنفيذ "الكراكاج" في لحظات معينة ومؤثرة، مثل بداية المباريات الهامة (الديربي أو النهائي)، أو عند تسجيل أهداف حاسمة، مما يضفي طابعاً احتفالياً ملحمياً ومخيفاً للخصم في آن واحد.
+المخاطرة والشغف: يتطلب "الكراكاج" شغفاً كبيراً وتحدياً للقوانين أحياناً، وهو جزء لا يتجزأ من ثقافة الألتراس التي تقدر التضحية من أجل خلق مشهد فريد. 
+
+    </p>
+</section>
+
+<section class="section" id="gallery">
+    <h2>الصور</h2>
+    <div class="gallery">
+        <img src="IMG_9472.jpeg" alt="Tifo 1">
+        <img src="IMG_9471.jpeg" alt="Tifo 2">
+        <img src="IMG_9468.jpeg" alt="Travel 1">
+        
+    </div>
+</section>
+
+<!-- ===== الفوتر ===== -->
+<footer>
+    © Zapatista Esperanza - Ultras Espérance
+</footer>
+
+</body>
+</html>
